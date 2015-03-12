@@ -1,0 +1,60 @@
+//
+// Global
+//
+
+
+body {
+    font-family: "proxima-nova-alt", sans-serif;
+    background: url('../img/bg.jpg') no-repeat $color-bg;
+    background-size: 160%;
+
+    @media(min-width: 460px) {
+        background-size: 100%;
+    }
+
+    @media(min-width: $medium) {
+        background-position: 0 -32px;
+    }
+
+    @media(min-width: 1435px) {
+        background-position: 0 -72px;
+    }
+}
+
+.cirquit {
+    margin-top: 3.5em;
+    padding: 0 1em;
+    text-align: center;
+    color: #fff;
+
+    @media(min-width: 580px) {
+        position: relative;
+    }
+}
+
+.cirquit-text {
+    font-size: 2rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.33), 0 1px 39px rgba(255, 255, 255, 0.26);
+
+    > div {
+        margin-bottom: 3em;
+    }
+
+    .you-record {
+        @media(min-width: 580px) {
+            position: absolute;
+            left: 50%;
+            top: 6em;
+            margin-left: -210px;
+        }
+    }
+
+    .they-record {
+        @media(min-width: 580px) {
+            position: absolute;
+            right: 50%;
+            top: 6em;
+            margin-right: -234px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Cirquit",
+  "version": "1.0.0",
+  "description": "You record, they record; we record",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Sear, Ryan Elliott-Potter, Jonathan Lord",
+  "license": "ISC"
+}

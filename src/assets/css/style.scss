@@ -1,0 +1,84 @@
+@charset "UTF-8";
+//
+// Good to change
+//
+
+
+// Variables
+
+// Base
+  // $base-font-size:      16px;
+  // $base-line-height:    1.4;
+  // $base-margin-bottom:  24px;
+  // $base-font-family:    sans-serif;
+  // $base-font-color:     #ddd;
+  // $base-border-radius:  4px;
+  // $base-input-height:   35px;
+
+
+// On or off
+  // $use-border-box:      true;
+  // $use-font-smoothing:  true;
+
+
+// Breakpoints
+  // $tiny:                360px;
+  // $small:               768px;
+  // $medium:              992px;
+  // $large:               1200px;
+
+
+// Font sizes
+  // $size-alpha:          36px; // h1
+  // $size-bravo:          30px; // h2
+  // $size-charlie:        24px; // h3
+  // $size-delta:          20px; // h4
+  // $size-echo:           16px; // h5
+  // $size-foxtrot:        14px; // h6
+  // $size-golf:           12px;
+  // $size-hotel:          10px;
+
+
+// Components
+  // $base-button-color:   #ddd;
+
+  $color-bg: #dcb090;
+
+
+// Imports
+
+// Base
+  @import "stage/base/normalize";
+  @import "stage/base/variables";
+  @import "stage/base/mixins";
+  @import "stage/base/global";
+  @import "stage/base/clearfix";
+  // @import "stage/base/helper";
+  @import "stage/base/forms";
+  @import "stage/base/typography";
+  // @import "stage/base/tables";
+  // @import "stage/base/quotes";
+  @import "stage/base/images";
+  @import "stage/base/lists";
+  // @import "stage/base/code";
+
+// Components
+  // @import "stage/components/grid";
+  // @import "stage/components/headings";
+  // @import "stage/components/nav";
+  // @import "stage/components/badges";
+  // @import "stage/components/buttons";
+  // @import "stage/components/text-line";
+  // @import "stage/components/records";
+  // @import "stage/components/custom-select";
+  // @import "stage/components/images";
+  // @import "stage/components/blocks";
+  // @import "stage/components/breadcrumbs";
+  // @import "stage/components/pagination";
+
+
+
+// Site CSS
+  @import "cirquit/global";
+
+
