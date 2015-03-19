@@ -1,7 +1,31 @@
 //
 // Global
 //
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
 
 body {
     font-family: "proxima-nova-alt", sans-serif;
@@ -41,11 +65,12 @@ img {
     font-size: 2rem;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.33), 0 1px 39px rgba(255, 255, 255, 0.26);
 
-    > div {
-        margin-bottom: 3em;
-    }
-
     .you-record {
+        opacity: 0;
+        @extend .fadeIn;
+        animation-delay: 1s;
+        margin-bottom: 0;
+
         img {
             position: relative;
             top: 31px;
@@ -65,6 +90,11 @@ img {
     }
 
     .they-record {
+        opacity: 0;
+        @extend .fadeIn;
+        animation-delay: 3s;
+        margin-bottom: 1.6em;
+
         img {
             position: relative;
             top: 31px;
@@ -85,5 +115,15 @@ img {
 }
 
 .we-record {
+    opacity: 0;
+    @extend .fadeIn;
+    animation-delay: 5s;
+    margin-bottom: 0.3em;
     text-shadow: 0 0 18px rgba(255, 255, 255, 0.38),0 0 32px rgba(255, 255, 255, 0.38);
+}
+
+.download-in-app-store {
+    opacity: 0;
+    @extend .fadeIn;
+    animation-delay: 6s;
 }

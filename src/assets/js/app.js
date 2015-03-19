@@ -8,5 +8,9 @@ app = {
             e.preventDefault;
             alert('She\'s on her way... Stay tuned');
         }, false)
+
+        var anim = document.querySelector(".you-record");
+
+        anim.addEventListener("animationend", function() { alert('end') }, false);
     }
 }

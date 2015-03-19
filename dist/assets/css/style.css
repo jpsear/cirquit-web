@@ -496,6 +496,31 @@ nav li {
   list-style: none;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn, .cirquit-text .you-record, .cirquit-text .they-record, .we-record, .download-in-app-store {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 body {
   font-family: "proxima-nova-alt", sans-serif;
   background: url("../img/bg.jpg") no-repeat #dcb090;
@@ -538,8 +563,11 @@ img {
   font-size: 2rem;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.33), 0 1px 39px rgba(255, 255, 255, 0.26);
 }
-.cirquit-text > div {
-  margin-bottom: 3em;
+.cirquit-text .you-record {
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  margin-bottom: 0;
 }
 .cirquit-text .you-record img {
   position: relative;
@@ -558,6 +586,12 @@ img {
   .cirquit-text .you-record {
     margin-left: -410px;
   }
+}
+.cirquit-text .they-record {
+  opacity: 0;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  margin-bottom: 1.6em;
 }
 .cirquit-text .they-record img {
   position: relative;
@@ -579,5 +613,15 @@ img {
 }
 
 .we-record {
+  opacity: 0;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  margin-bottom: 0.3em;
   text-shadow: 0 0 18px rgba(255, 255, 255, 0.38), 0 0 32px rgba(255, 255, 255, 0.38);
+}
+
+.download-in-app-store {
+  opacity: 0;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
