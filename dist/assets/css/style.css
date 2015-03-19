@@ -517,13 +517,18 @@ body {
   }
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .cirquit {
   margin-top: 3.5em;
   padding: 0 1em;
   text-align: center;
   color: #fff;
 }
-@media (min-width: 580px) {
+@media (min-width: 714px) {
   .cirquit {
     position: relative;
   }
@@ -536,19 +541,43 @@ body {
 .cirquit-text > div {
   margin-bottom: 3em;
 }
-@media (min-width: 580px) {
+.cirquit-text .you-record img {
+  position: relative;
+  top: 31px;
+  left: -24px;
+}
+@media (min-width: 714px) {
   .cirquit-text .you-record {
     position: absolute;
     left: 50%;
     top: 6em;
+    margin-left: -290px;
+  }
+}
+@media (min-width: 960px) {
+  .cirquit-text .you-record {
     margin-left: -410px;
   }
 }
-@media (min-width: 580px) {
+.cirquit-text .they-record img {
+  position: relative;
+  top: 31px;
+  right: -24px;
+}
+@media (min-width: 714px) {
   .cirquit-text .they-record {
     position: absolute;
     right: 50%;
     top: 6em;
+    margin-right: -315px;
+  }
+}
+@media (min-width: 960px) {
+  .cirquit-text .they-record {
     margin-right: -416px;
   }
+}
+
+.we-record {
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.38), 0 0 32px rgba(255, 255, 255, 0.38);
 }

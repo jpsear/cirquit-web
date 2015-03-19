@@ -16,7 +16,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
- return gulp.src(['src/assets/js/retina.min.js'])
+ return gulp.src(['src/assets/js/retina.min.js', 'src/assets/js/app.js'])
   .pipe(concat('app.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/assets/js'));
