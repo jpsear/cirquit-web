@@ -16,7 +16,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
- return gulp.src(['src/js/tabletop.js', 'src/js/sheetsee.js', 'src/js/app.js'])
+ return gulp.src(['src/assets/js/retina.min.js'])
   .pipe(concat('app.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/assets/js'));
